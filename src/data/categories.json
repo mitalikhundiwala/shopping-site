@@ -1,38 +1,185 @@
 [
   {
-    "0": "eBay Motors",
-    "1": "Collectibles",
-    "99": "Everything Else",
-    "220": "Toys & Hobbies",
-    "237": "Dolls & Bears",
-    "260": "Stamps",
-    "267": "Books",
-    "281": "Jewelry & Watches",
-    "293": "Consumer Electronics",
-    "316": "Specialty Services",
-    "382": "Sporting Goods",
-    "550": "Art",
-    "619": "Musical Instruments",
-    "625": "Cameras & Photo",
-    "870": "Pottery & Glass",
-    "1249": "Video Games",
-    "1305": "Tickets",
-    "2984": "Baby",
-    "3252": "Travel",
-    "10542": "Real Estate",
-    "11116": "Coins & Paper Money",
-    "11232": "DVDs & Movies",
-    "11233": "Music",
-    "11450": "Clothing, Shoes & Accessories",
-    "11700": "Home & Garden",
-    "12576": "Business & Industrial",
-    "14339": "Crafts",
-    "15032": "Cell Phones & PDAs",
-    "20081": "Antiques",
-    "26395": "Health & Beauty",
-    "31411": "Gift Certificates",
-    "45100": "Entertainment Memorabilia",
-    "58058": "Computers & Networking",
-    "64482": "Sports Mem, Cards & Fan Shop"
+    "id": "550",
+    "name": "Art",
+    "subCategories": [
+      {
+        "id": "20118",
+        "parentCategory": "550",
+        "name": "Digital Art"
+      },
+      {
+        "id": "20119",
+        "parentCategory": "550",
+        "name": "Drawings"
+      },
+      {
+        "id": "357",
+        "parentCategory": "550",
+        "name": "Folk Art"
+      },
+      {
+        "id": "20122",
+        "parentCategory": "550",
+        "name": "Mixed Media"
+      },
+      {
+        "id": "20125",
+        "parentCategory": "550",
+        "name": "Paintings"
+      },
+      {
+        "id": "66465",
+        "parentCategory": "550",
+        "name": "Photographic Images"
+      },
+      {
+        "id": "28009",
+        "parentCategory": "550",
+        "name": "Posters"
+      },
+      {
+        "id": "20140",
+        "parentCategory": "550",
+        "name": "Prints"
+      },
+      {
+        "id": "553",
+        "parentCategory": "550",
+        "name": "Sculpture, Carvings"
+      },
+      {
+        "id": "20158",
+        "parentCategory": "550",
+        "name": "Self-Representing Artists"
+      },
+      {
+        "id": "4174",
+        "parentCategory": "550",
+        "name": "Other Art"
+      },
+      {
+        "id": "52524",
+        "parentCategory": "550",
+        "name": "Wholesale Lots"
+      }
+    ]
+  },
+  {
+    "id": "267",
+    "name": "Books",
+    "subCategories": [
+      {
+        "id": "45110",
+        "parentCategory": "267",
+        "name": "Accessories"
+      },
+      {
+        "id": "29223",
+        "parentCategory": "267",
+        "name": "Antiquarian & Collectible"
+      },
+      {
+        "id": "29792",
+        "parentCategory": "267",
+        "name": "Audiobooks"
+      },
+      {
+        "id": "118254",
+        "parentCategory": "267",
+        "name": "Catalogs"
+      },
+      {
+        "id": "279",
+        "parentCategory": "267",
+        "name": "Children's Books"
+      },
+      {
+        "id": "377",
+        "parentCategory": "267",
+        "name": "Fiction Books"
+      },
+      {
+        "id": "280",
+        "parentCategory": "267",
+        "name": "Magazine Back Issues"
+      },
+      {
+        "id": "29253",
+        "parentCategory": "267",
+        "name": "Magazine Subscriptions"
+      },
+      {
+        "id": "378",
+        "parentCategory": "267",
+        "name": "Nonfiction Books"
+      },
+      {
+        "id": "2228",
+        "parentCategory": "267",
+        "name": "Textbooks, Education"
+      },
+      {
+        "id": "29399",
+        "parentCategory": "267",
+        "name": "Wholesale, Bulk Lots"
+      },
+      {
+        "id": "268",
+        "parentCategory": "267",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "id": "11116",
+    "name": "Coins & Paper Money",
+    "subCategories": [
+      {
+        "id": "253",
+        "parentCategory": "11116",
+        "name": "Coins: US"
+      },
+      {
+        "id": "39482",
+        "parentCategory": "11116",
+        "name": "Bullion"
+      },
+      {
+        "id": "4733",
+        "parentCategory": "11116",
+        "name": "Coins: Ancient"
+      },
+      {
+        "id": "256",
+        "parentCategory": "11116",
+        "name": "Coins: World"
+      },
+      {
+        "id": "3452",
+        "parentCategory": "11116",
+        "name": "Exonumia"
+      },
+      {
+        "id": "3412",
+        "parentCategory": "11116",
+        "name": "Paper Money: US"
+      },
+      {
+        "id": "3411",
+        "parentCategory": "11116",
+        "name": "Paper Money: World"
+      },
+      {
+        "id": "83274",
+        "parentCategory": "11116",
+        "name": "Publications & Supplies"
+      },
+      {
+        "id": "3444",
+        "parentCategory": "11116",
+        "name": "Scripophily"
+      }
+    ]
   }
 ]

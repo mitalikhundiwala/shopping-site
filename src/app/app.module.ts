@@ -8,9 +8,10 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
-import { NoContentComponent } from './no-content-component';
-import { ProductsComponent } from './products/products.component';
+import { NoContentComponent } from './pages/no-content-component';
+import { ProductsComponent } from './pages/products/products.component';
 
+import { CategoryService } from './services/category.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProductsComponent } from './products/products.component';
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
+    CategoryService
   ],
   bootstrap: [AppComponent]
 })
