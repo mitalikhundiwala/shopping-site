@@ -18,7 +18,7 @@
                 <li>
                   <p>{{category.name}}</p>
                 </li>
-                <li *ngFor="let subCategory of category.subCategories"><a routerLink="{{subCategory.id}}"> {{subCategory.name}} </a></li>
+                <li *ngFor="let subCategory of category.subCategories"><a routerLink="category/{{subCategory.id}}"> {{subCategory.name}} </a></li>
               </ul>
             </div>
           </div>

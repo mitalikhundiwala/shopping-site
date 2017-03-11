@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NoContentComponent } from './pages/no-content-component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductsForCategoryComponent } from './pages/products-for-category/products-for-category.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: ProductsComponent, pathMatch: 'full' },
+    { path: 'category/:categoryId', component: ProductsForCategoryComponent, pathMatch: 'full' },
     { path: '404', component: NoContentComponent },
     { path: '**', redirectTo: '/404' }
 ];
@@ -15,10 +17,3 @@ export const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

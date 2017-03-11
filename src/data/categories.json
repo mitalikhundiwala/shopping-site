@@ -1,183 +1,183 @@
 [
   {
-    "id": "550",
+    "id": 1,
     "name": "Art",
     "subCategories": [
       {
-        "id": "20118",
-        "parentCategory": "550",
+        "id": 4,
+        "parentCategory": 1,
         "name": "Digital Art"
       },
       {
-        "id": "20119",
-        "parentCategory": "550",
+        "id": 5,
+        "parentCategory": 1,
         "name": "Drawings"
       },
       {
-        "id": "357",
-        "parentCategory": "550",
+        "id": 6,
+        "parentCategory": 1,
         "name": "Folk Art"
       },
       {
-        "id": "20122",
-        "parentCategory": "550",
+        "id": 7,
+        "parentCategory": 1,
         "name": "Mixed Media"
       },
       {
-        "id": "20125",
-        "parentCategory": "550",
+        "id": 8,
+        "parentCategory": 1,
         "name": "Paintings"
       },
       {
-        "id": "66465",
-        "parentCategory": "550",
+        "id": 9,
+        "parentCategory": 1,
         "name": "Photographic Images"
       },
       {
-        "id": "28009",
-        "parentCategory": "550",
+        "id": 10,
+        "parentCategory": 1,
         "name": "Posters"
       },
       {
-        "id": "20140",
-        "parentCategory": "550",
+        "id": 11,
+        "parentCategory": 1,
         "name": "Prints"
       },
       {
-        "id": "553",
-        "parentCategory": "550",
+        "id": 12,
+        "parentCategory": 1,
         "name": "Sculpture, Carvings"
       },
       {
-        "id": "20158",
-        "parentCategory": "550",
+        "id": 13,
+        "parentCategory": 1,
         "name": "Self-Representing Artists"
       },
       {
-        "id": "4174",
-        "parentCategory": "550",
+        "id": 14,
+        "parentCategory": 1,
         "name": "Other Art"
       },
       {
-        "id": "52524",
-        "parentCategory": "550",
+        "id": 15,
+        "parentCategory": 1,
         "name": "Wholesale Lots"
       }
     ]
   },
   {
-    "id": "267",
+    "id": 2,
     "name": "Books",
     "subCategories": [
       {
-        "id": "45110",
-        "parentCategory": "267",
+        "id": 16,
+        "parentCategory": 2,
         "name": "Accessories"
       },
       {
-        "id": "29223",
-        "parentCategory": "267",
+        "id": 17,
+        "parentCategory": 2,
         "name": "Antiquarian & Collectible"
       },
       {
-        "id": "29792",
-        "parentCategory": "267",
+        "id": 18,
+        "parentCategory": 2,
         "name": "Audiobooks"
       },
       {
-        "id": "118254",
-        "parentCategory": "267",
+        "id": 19,
+        "parentCategory": 2,
         "name": "Catalogs"
       },
       {
-        "id": "279",
-        "parentCategory": "267",
+        "id": 20,
+        "parentCategory": 2,
         "name": "Children's Books"
       },
       {
-        "id": "377",
-        "parentCategory": "267",
+        "id": 21,
+        "parentCategory": 2,
         "name": "Fiction Books"
       },
       {
-        "id": "280",
-        "parentCategory": "267",
+        "id": 22,
+        "parentCategory": 2,
         "name": "Magazine Back Issues"
       },
       {
-        "id": "29253",
-        "parentCategory": "267",
+        "id": 23,
+        "parentCategory": 2,
         "name": "Magazine Subscriptions"
       },
       {
-        "id": "378",
-        "parentCategory": "267",
+        "id": 24,
+        "parentCategory": 2,
         "name": "Nonfiction Books"
       },
       {
-        "id": "2228",
-        "parentCategory": "267",
+        "id": 25,
+        "parentCategory": 2,
         "name": "Textbooks, Education"
       },
       {
-        "id": "29399",
-        "parentCategory": "267",
+        "id": 26,
+        "parentCategory": 2,
         "name": "Wholesale, Bulk Lots"
       },
       {
-        "id": "268",
-        "parentCategory": "267",
+        "id": 27,
+        "parentCategory": 2,
         "name": "Other"
       }
     ]
   },
   {
-    "id": "11116",
+    "id": 3,
     "name": "Coins & Paper Money",
     "subCategories": [
       {
-        "id": "253",
-        "parentCategory": "11116",
+        "id": 28,
+        "parentCategory": 3,
         "name": "Coins: US"
       },
       {
-        "id": "39482",
-        "parentCategory": "11116",
+        "id": 29,
+        "parentCategory": 3,
         "name": "Bullion"
       },
       {
-        "id": "4733",
-        "parentCategory": "11116",
+        "id": 30,
+        "parentCategory": 3,
         "name": "Coins: Ancient"
       },
       {
-        "id": "256",
-        "parentCategory": "11116",
+        "id": 31,
+        "parentCategory": 3,
         "name": "Coins: World"
       },
       {
-        "id": "3452",
-        "parentCategory": "11116",
+        "id": 32,
+        "parentCategory": 3,
         "name": "Exonumia"
       },
       {
-        "id": "3412",
-        "parentCategory": "11116",
+        "id": 33,
+        "parentCategory": 3,
         "name": "Paper Money: US"
       },
       {
-        "id": "3411",
-        "parentCategory": "11116",
+        "id": 34,
+        "parentCategory": 3,
         "name": "Paper Money: World"
       },
       {
-        "id": "83274",
-        "parentCategory": "11116",
+        "id": 35,
+        "parentCategory": 3,
         "name": "Publications & Supplies"
       },
       {
-        "id": "3444",
-        "parentCategory": "11116",
+        "id": 36,
+        "parentCategory": 3,
         "name": "Scripophily"
       }
     ]

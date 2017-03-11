@@ -14,13 +14,15 @@ import { ProductsComponent } from './pages/products/products.component';
 import { CategoryService } from './services/category.service';
 import { ProductService } from './services/product.service';
 import { ProductSummaryCardComponent } from './elements/product-summary-card/product-summary-card.component';
+import { ProductsForCategoryComponent } from './pages/products-for-category/products-for-category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoContentComponent,
     ProductsComponent,
-    ProductSummaryCardComponent
+    ProductSummaryCardComponent,
+    ProductsForCategoryComponent
   ],
   imports: [
     BrowserModule,

@@ -24,9 +24,11 @@ export class ProductService {
                 .subscribe((data: any) => {
                     let products: Product[] = [];
                     if (data) {
-                        products = (<Object[]>data).map((product: any) => {
+                        products = _.chain(data).filter((currentData: any) => {
+                            return currentData.categoryId === categoryId;
+                        }).map((product: any) => {
                             return ProductAdapter.parseResponse(product);
-                        });
+                        }).value();
                     }
                     resolve(products);
                 }, (error) => {
