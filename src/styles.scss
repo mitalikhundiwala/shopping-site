@@ -1,41 +1,41 @@
 @import './styles/styleguide';
 @import './styles/spinner';
 @import '../node_modules/Yamm/yamm/_yamm';
-
-html
-{
+html {
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 100%;
 }
 
-body
-{
+body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.loading-overlay
-{
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background: rgba($gray-light, 0.25);
-   z-index: 9999;
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($gray-light, 0.25);
+    z-index: 9999;
+    .spinner {
+        $spinner-width: 48px;
+        position: absolute;
+        height: $spinner-width;
+        width: $spinner-width;
+        top: 50%;
+        margin-top: -($spinner-width / 2);
+        left: 50%;
+        margin-left: -($spinner-width / 2);
+    }
+}
 
-   .spinner
-   {
-       $spinner-width: 48px;
-
-       position:absolute;
-       height: $spinner-width;
-       width: $spinner-width;
-       top:50%;
-       margin-top: -($spinner-width / 2);
-       left: 50%;
-       margin-left: -($spinner-width / 2);
-   }
+h1.page-header {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
 }

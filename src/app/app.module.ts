@@ -12,12 +12,15 @@ import { NoContentComponent } from './pages/no-content-component';
 import { ProductsComponent } from './pages/products/products.component';
 
 import { CategoryService } from './services/category.service';
+import { ProductService } from './services/product.service';
+import { ProductSummaryCardComponent } from './elements/product-summary-card/product-summary-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoContentComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductSummaryCardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { CategoryService } from './services/category.service';
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
-    CategoryService
+    CategoryService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })

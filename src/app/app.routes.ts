@@ -4,8 +4,8 @@ import { NoContentComponent } from './pages/no-content-component';
 import { ProductsComponent } from './pages/products/products.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/products', pathMatch: 'full' },
-    { path: 'products', component: ProductsComponent, pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: ProductsComponent, pathMatch: 'full' },
     { path: '404', component: NoContentComponent },
     { path: '**', redirectTo: '/404' }
 ];
