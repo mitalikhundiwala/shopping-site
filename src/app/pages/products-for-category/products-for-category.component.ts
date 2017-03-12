@@ -27,7 +27,9 @@ export class ProductsForCategoryComponent implements OnInit {
         .subscribe((prodcuts) => {
           this.products = prodcuts;
         });
-      this.category = this._categoryService.getCategory(categoryId);
+      this._categoryService.categories.subscribe((categories: Category[]) => {
+        this.category = this._categoryService.getCategory(categoryId);
+      });
     });
 
   }

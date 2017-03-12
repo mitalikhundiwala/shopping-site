@@ -13,8 +13,10 @@ import { ProductsComponent } from './pages/products/products.component';
 
 import { CategoryService } from './services/category.service';
 import { ProductService } from './services/product.service';
+import { OrderService } from './services/order.service';
 import { ProductSummaryCardComponent } from './elements/product-summary-card/product-summary-card.component';
 import { ProductsForCategoryComponent } from './pages/products-for-category/products-for-category.component';
+import { OrderComponent } from './pages/order/order.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ProductsForCategoryComponent } from './pages/products-for-category/prod
     NoContentComponent,
     ProductsComponent,
     ProductSummaryCardComponent,
-    ProductsForCategoryComponent
+    ProductsForCategoryComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { ProductsForCategoryComponent } from './pages/products-for-category/prod
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     CategoryService,
-    ProductService
+    ProductService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })

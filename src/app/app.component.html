@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary yamm">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded yamm">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,17 @@
         </div>
       </li>
     </ul>
-    <span class="navbar-text float-xs-right">
+    <ul class="navbar-nav float-xs-right secondary-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="order">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Your Cart
+          <span class="badge badge-pill badge-success">{{countOfOrderItems}} of {{orderItems.length}}</span>
+        </a>
+      </li>
+    </ul>
+    <!--<span class="navbar-text float-xs-right">
        Logged In as, Guest
-       </span>
+    </span>-->
   </div>
 </nav>
 <div class="container page-content-container">

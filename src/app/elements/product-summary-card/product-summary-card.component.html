@@ -1,10 +1,12 @@
-<!--<div class="card">-->
-  <img class="card-img-top" src="./assets/images/{{product.image}}" alt="Card image cap">
-  <div class="card-block">
-    <p class="card-title font-weight-bold">{{product.name}}</p>
-    <p class="card-text">{{product.shortDescroption}}</p>
-  </div>
-  <div class="card-footer">
-    <a href="#" class="btn btn-primary">Add to Cart</a>
-  </div>
-<!--</div>-->
+<img class="card-img-top" src="./assets/images/{{product.image}}" alt="Card image cap">
+<div class="card-block">
+  <p class="card-title font-weight-bold">{{product.name}}</p>
+  <p class="card-text"><small class="text-muted">{{product.price | currency}}</small></p>
+  <p class="card-text">{{product.shortDescroption}}</p>
+</div>
+<div class="card-footer">
+  <button *ngIf="!isProductInCart" class="btn btn-primary" (click)="addProductToCart($event)"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+  Add to Cart</button>
+  <button *ngIf="isProductInCart" class="btn btn-success" (click)="addProductToCart($event)"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+  Add Another</button>
+</div>

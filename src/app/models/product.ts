@@ -40,4 +40,5 @@ export class Product {
         this.categoryId = props.categoryId;
         this.category = props.category;
     }
+
 }

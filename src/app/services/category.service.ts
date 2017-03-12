@@ -20,6 +20,10 @@ export class CategoryService {
         this._headers.append('Content-Type', 'application/json');
     }
 
+    get categories() {
+        return this._categories.asObservable();
+    }
+
     getCategories(): Observable<Category[]> {
         let promise: Promise<Category[]> = new Promise((resolve, reject) => {
             return this._http.get(this._url + '/data/categories.json').map(res => res.json())
@@ -29,6 +33,7 @@ export class CategoryService {
                         categories = (<Object[]>data).map((category: any) => {
                             return CategoryAdapter.parseResponse(category);
                         });
+                        this._categories.next(categories);
                     }
                     resolve(categories);
                 }, (error) => {
@@ -40,9 +45,24 @@ export class CategoryService {
 
     getCategory(id: number): Category {
         let categories = this._categories.getValue();
-        let category: Category = _.find(categories, (currentCategory) => {
+        let category: Category = _.find(categories, (currentCategory: Category) => {
             return currentCategory.id === id;
         });
+
+        if (!category) {
+            let subCategories: Category[] = [];
+            _.chain(categories)
+                .map((currentCategory: Category) => {
+                    return currentCategory.subCategories;
+                })
+                .forEach((currentSubCategories: Category[]) => {
+                    subCategories = subCategories.concat(currentSubCategories);
+                });
+
+            category = _.find(subCategories, (currentCategory: Category) => {
+                return currentCategory.id === id;
+            });
+        }
         return category;
     }
 }
