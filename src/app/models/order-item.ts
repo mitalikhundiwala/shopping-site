@@ -7,4 +7,8 @@ export class OrderItem {
         this.product = props.product;
         this.quantity = props.quantity;
     }
+
+    get price(): number {
+        return this.product.price * this.quantity;
+    }
 }

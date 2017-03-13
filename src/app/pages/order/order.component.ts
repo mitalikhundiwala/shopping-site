@@ -37,8 +37,9 @@ export class OrderComponent implements OnInit {
     this._orderService.removeProductFromOrder(product);
   }
 
-  updateProductQuantityFromOrder(product: Product) {
-    this._orderService.updateProductQuantityFromOrder(product, 1);
+  updateProductQuantityFromOrder(event, product: Product) {
+    let quantity = parseInt(event.target.value, 10);
+    this._orderService.updateProductQuantityFromOrder(product, quantity);
   }
 
 }

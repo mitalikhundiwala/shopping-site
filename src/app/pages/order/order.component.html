@@ -1,22 +1,49 @@
 <h1 class="page-header">Your Cart</h1>
 <div class="row" *ngIf="orderItems.length > 0">
   <div class="col-8">
-    <ul class="list-group">
-      <li *ngFor="let order of orderItems" class="list-group-item">
-        <div class="col-6">
-          {{order.product.name}}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product Name</th>
+          <th>Unit Price</th>          
+          <th>Quantity</th>
+          <th>Price</th>          
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let orderItem of orderItems;let i=index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{orderItem.product.name}}</td>
+          <td>{{orderItem.product.price | currency}}</td>
+          <td><input type="number" name="quantity" (change)="updateProductQuantityFromOrder($event,orderItem.product)" [ngModel]="orderItem.quantity"
+              class="form-control" min="1" /></td>
+          <td>{{orderItem.price | currency}}</td>
+          <td><button class="btn btn-outline-danger btn-sm" (click)="removeOrderItem(orderItem.product)"><i class="fa fa-remove"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--<ul class="list-group">
+      <li *ngFor="let orderItem of orderItems;let i=index" class="list-group-item">
+        <div class="col-4">
+          {{orderItem.product.name}}
         </div>
         <div class="col-2">
-          {{order.product.price | currency}}
+          {{orderItem.product.price | currency}}
         </div>
         <div class="col-2">
-          <input type="number" name="quantity" [(ngModel)]="order.quantity" class="form-control" />
+          <input type="number" name="quantity" (change)="updateProductQuantityFromOrder($event,orderItem.product)" [ngModel]="orderItem.quantity"
+            class="form-control" min="1" />
         </div>
         <div class="col-2">
-          <button class="btn" (click)="removeOrderItem(order.product)"><i class="fa fa-remove"></i></button>
+          {{orderItem.price | currency}}
+        </div>
+        <div class="col-2">
+          <button class="btn" (click)="removeOrderItem(orderItem.product)"><i class="fa fa-remove"></i></button>
         </div>
       </li>
-    </ul>
+    </ul>-->
   </div>
   <div class="col-4">
     <ul class="list-group">
