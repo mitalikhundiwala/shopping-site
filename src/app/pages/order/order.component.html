@@ -6,9 +6,9 @@
         <tr>
           <th>#</th>
           <th>Product Name</th>
-          <th>Unit Price</th>          
+          <th>Unit Price</th>
           <th>Quantity</th>
-          <th>Price</th>          
+          <th>Price</th>
           <th>Remove</th>
         </tr>
       </thead>
@@ -24,38 +24,30 @@
         </tr>
       </tbody>
     </table>
-    <!--<ul class="list-group">
-      <li *ngFor="let orderItem of orderItems;let i=index" class="list-group-item">
-        <div class="col-4">
-          {{orderItem.product.name}}
-        </div>
-        <div class="col-2">
-          {{orderItem.product.price | currency}}
-        </div>
-        <div class="col-2">
-          <input type="number" name="quantity" (change)="updateProductQuantityFromOrder($event,orderItem.product)" [ngModel]="orderItem.quantity"
-            class="form-control" min="1" />
-        </div>
-        <div class="col-2">
-          {{orderItem.price | currency}}
-        </div>
-        <div class="col-2">
-          <button class="btn" (click)="removeOrderItem(orderItem.product)"><i class="fa fa-remove"></i></button>
-        </div>
-      </li>
-    </ul>-->
   </div>
   <div class="col-4">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <div class="col-6">
-          Total
-        </div>
-        <div class="col-2">
-          {{order.totalPrice | currency}}
-        </div>
-      </li>
-    </ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Products</td>
+          <td>{{orderItems.length}}</td>
+        </tr>
+        <tr>
+          <td>Items</td>
+          <td>{{countOfOrderItems}}</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td><strong> {{order.totalPrice | currency}}</strong></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 <div class="alert alert-info" *ngIf="orderItems.length == 0">
